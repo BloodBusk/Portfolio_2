@@ -4,7 +4,7 @@ import HeroImg from "../imgs/CV_image_effekt_01.png";
 
 export default function Hero() {
   return (
-    <section className="w-full py-8 flex px-6">
+    <section className="w-[1200px] m-auto py-8 flex">
       <div className="w-1/2">
         <img src={HeroImg} alt="hero" className="w-2/3 m-auto" />
       </div>

@@ -3,10 +3,10 @@ html {
 }
 
 :root {
-  --background-gray-1: #999999;
+  --background-gray-1: #e0e0e0;
   --background-gray-2: #777777;
   --background-gray-3: #555555;
-  --background-gray-4: #111111;
+  --background-gray-4: #272829;
 }
 
 .bg-1 {
@@ -35,11 +35,41 @@ html {
   color: var(--background-gray-4);
 }
 
-.hoverLink{
+.hoverLink {
   display: inline-block;
   transition: all 0.5s ease-in-out;
 }
 
-.hoverLink:hover{
+.hoverLink:hover {
   transform: scale(1.1) translateY(-5px);
+}
+
+.hoverLink-2 {
+  display: inline-block;
+  transition: all 0.5s ease-in-out;
+}
+
+.hoverLink-2:hover {
+  transform: scale(1.1) translateY(-2px);
+}
+
+.pieChartImg{
+  transform-origin: 0% 0%;
+  cursor: pointer;
+}
+
+#pieChart-1:hover {
+  transform: scale(0.27);
+  transform-origin: 35% 0%;
+  z-index: 99;
+}
+#pieChart-2:hover {
+  transform-origin: 0% 10%;
+  transform: scale(0.27);
+  z-index: 99;
+}
+#pieChart-3:hover {
+  transform-origin: 70% 10%;
+  transform: scale(0.27);
+  z-index: 99;
 }

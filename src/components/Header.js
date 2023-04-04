@@ -8,7 +8,8 @@ import LinkedIn from "../imgs/linkedin_icon.png";
 
 export default function Header() {
   return (
-    <header className="flex justify-center items-center py-8 shadow-md ">
+    <header className=" py-8 shadow-md">
+      <div className="flex justify-center items-center w-[1200px] m-auto ">
       <div className="w-1/3 text-center">
         <HashLink smooth to="" className="p-4 hover:underline decoration-gray-900 decoration-4">Home</HashLink>
         <HashLink smooth to="" className="p-4 hover:underline decoration-gray-900 decoration-4">Work</HashLink>
@@ -24,7 +25,7 @@ export default function Header() {
         <Link to="" className="w-12 mx-4">
           <img src={LinkedIn} alt="linkedin" className="" />
         </Link>
-      </div>
+      </div></div>
     </header>
   );
 }
