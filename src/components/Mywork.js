@@ -9,8 +9,8 @@ const myWorkArr = [
     description:
       "I have created a website that not only showcases the benefits of Pilates but also provides an interactive and user-friendly platform for practitioners to access a variety of Pilates classes and resources.",
     image: TestImg1,
-    description2: "Some of the koding languages i used",
-    link: "www.google.com",
+    description2: "The skills i used during this project consisted of: UI/UX Design, HTML, CSS, JavaScript",
+    link: "https://www.google.com/",
   },
   {
     id: 2,
@@ -18,8 +18,8 @@ const myWorkArr = [
     description:
       "I have created a website that not only showcases the benefits of Pilates but also provides an interactive and user-friendly platform for practitioners to access a variety of Pilates classes and resources.",
     image: TestImg1,
-    description2: "Some of the koding languages i used",
-    link: "www.google.com",
+    description2: "The skills i used during this project consisted of: UI/UX Design, React",
+    link: "https://www.google.com/",
   },
   {
     id: 3,
@@ -27,8 +27,8 @@ const myWorkArr = [
     description:
       "I have created a website that not only showcases the benefits of Pilates but also provides an interactive and user-friendly platform for practitioners to access a variety of Pilates classes and resources.",
     image: TestImg1,
-    description2: "Some of the koding languages i used",
-    link: "www.google.com",
+    description2: "The skills i used during this project consisted of: UI/UX Design, React, Remix, MongoDB",
+    link: "https://www.google.com/",
   },
 ];
 
@@ -42,7 +42,7 @@ export default function Mywork() {
   };
 
   return (
-    <section className="flex flex-col items-center my-[5vh] w-[1200px] m-auto">
+    <section className="flex flex-col items-center my-[5vh] w-[1200px] m-auto" id="mywork">
       <h2 className="text-2xl">My Work</h2>
       <div className="mt-[2vh]">
         {myWorkArr.map((wa) => {
@@ -60,7 +60,7 @@ export default function Mywork() {
                       className="mt-4 px-4 py-1 bg-4 text-white rounded-lg hoverLink-2"
                       onClick={() => handleShow(true)}
                     >
-                      Go To Project
+                      <a href={wa.link} target="_blank" rel="noreferrer">Go To Project</a>
                     </button>
                   </>
                 ) : (
