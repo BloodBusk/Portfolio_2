@@ -42,17 +42,17 @@ export default function Mywork() {
   };
 
   return (
-    <section className="flex flex-col items-center my-[5vh] w-[1200px] m-auto" id="mywork">
+    <section className="flex flex-col items-center my-[5vh] w-[1200px] m-auto max-lg:w-4/5" id="mywork">
       <h2 className="text-2xl">My Work</h2>
       <div className="mt-[2vh]">
         {myWorkArr.map((wa) => {
           return (
             <div
-              className="flex justify-center bg-1 m-6 py-6 px-20 rounded-xl"
+              className="flex justify-center bg-1 m-6 py-6 px-20 rounded-xl max-lg:flex-col max-lg:items-center max-lg:p-4"
               key={wa.id}
             >
-              <h3 className="w-1/3 text-xl font-bold">{wa.title}</h3>
-              <div className="w-1/3 flex flex-col justify-between items-start p-2">
+              <h3 className="w-1/3 text-xl font-bold max-lg:w-full">{wa.title}</h3>
+              <div className="w-1/3 flex flex-col justify-between items-start p-2 max-lg:w-full max-lg:p-0">
                 {show === wa.id ? (
                   <>
                     <p>{wa.description2} </p>
@@ -75,11 +75,11 @@ export default function Mywork() {
                   </>
                 )}
               </div>
-              <div className="w-1/3 m-auto">
+              <div className="w-1/3 m-auto max-lg:w-full mt-2">
                 <img
                   src={wa.image}
                   alt="imagecontainer"
-                  className="w-2/3 ml-auto rounded-xl"
+                  className="w-2/3 ml-auto rounded-xl max-lg:m-auto"
                 />
               </div>
             </div>

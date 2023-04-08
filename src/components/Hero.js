@@ -5,11 +5,11 @@ import Pdf from "../documents/CVpdf_2023.pdf";
 
 export default function Hero() {
   return (
-    <section className="w-[1200px] m-auto py-8 flex" id="hero">
-      <div className="w-1/2">
+    <section className="w-[1200px] m-auto py-8 flex max-lg:w-4/5 max-lg:flex-col" id="hero">
+      <div className="w-1/2 max-lg:w-full">
         <img src={HeroImg} alt="hero" className="w-2/3 m-auto" />
       </div>
-      <div className="w-1/2 flex flex-col justify-center ">
+      <div className="w-1/2 flex flex-col justify-center max-lg:w-full ">
         <h1 className="pb-2 text-4xl font-bold">Thomas Busk</h1>
         <h2 className="pb-8 text-2xl font-bold">Webdeveloper</h2>
         <p className="pb-16 text-xl">
