@@ -15,7 +15,7 @@ export default function Header() {
   };
 
   return (
-    <header className=" py-8 shadow-md sticky top-0 bg-white">
+    <header className=" py-8 shadow-md sticky top-0 bg-white z-50">
       <div className="flex justify-center items-center w-[1200px] m-auto max-lg:w-4/5 max-lg:justify-evenly">
         <div className="w-1/3 text-center max-lg:flex max-lg:flex-col max-lg:text-left">
           <div className="hidden w-full max-lg:block" onClick={handleShow}>
@@ -26,7 +26,7 @@ export default function Header() {
               <HashLink
                 smooth
                 to="#hero"
-                className="p-4 hover:underline decoration-gray-900 decoration-4"
+                className="p-4 hover:underline decoration-gray-900 decoration-4 Inter-Med"
                 onClick={() => setShow(false)}
               >
                 Home
@@ -34,7 +34,7 @@ export default function Header() {
               <HashLink
                 smooth
                 to="#mywork"
-                className="p-4 hover:underline decoration-gray-900 decoration-4"
+                className="p-4 hover:underline decoration-gray-900 decoration-4 Inter-Med"
                 onClick={() => setShow(false)}
               >
                 Work
@@ -42,7 +42,7 @@ export default function Header() {
               <HashLink
                 smooth
                 to="#about"
-                className="p-4 hover:underline decoration-gray-900 decoration-4"
+                className="p-4 hover:underline decoration-gray-900 decoration-4 Inter-Med"
                 onClick={() => setShow(false)}
               >
                 About
@@ -54,21 +54,21 @@ export default function Header() {
           <HashLink
             smooth
             to="#hero"
-            className="p-4 hover:underline decoration-gray-900 decoration-4 max-lg:hidden"
+            className="p-4 hover:underline decoration-gray-900 decoration-4 max-lg:hidden Inter-Med"
           >
             Home
           </HashLink>
           <HashLink
             smooth
             to="#mywork"
-            className="p-4 hover:underline decoration-gray-900 decoration-4 max-lg:hidden"
+            className="p-4 hover:underline decoration-gray-900 decoration-4 max-lg:hidden Inter-Med"
           >
             Work
           </HashLink>
           <HashLink
             smooth
             to="#about"
-            className="p-4 hover:underline decoration-gray-900 decoration-4 max-lg:hidden"
+            className="p-4 hover:underline decoration-gray-900 decoration-4 max-lg:hidden Inter-Med"
           >
             About
           </HashLink>
