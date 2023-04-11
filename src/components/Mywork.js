@@ -12,7 +12,7 @@ const myWorkArr = [
     id: 1,
     title: "Pilates",
     description:
-      "I have created a website that not only showcases the benefits of Pilates but also provides an interactive and user-friendly platform for practitioners to access a variety of Pilates classes and resources.",
+      "My very first website, made in 2015. I have created a website that not only showcases the benefits of Pilates but also provides an interactive and user-friendly platform for practitioners to access a variety of Pilates classes and resources.",
     image: TestImg1,
     description2:
       "The skills i used during this project consisted of: HTML, CSS, JavaScript",
