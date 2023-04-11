@@ -4,6 +4,8 @@ import TestImg1 from "../imgs/testimg1.jpg";
 import MariaRosa from "../imgs/mariaRosa.png";
 import MadGlad from "../imgs/madGlad.png";
 import LolMix from "../imgs/lolMix.png";
+import CodeSnippet from "../imgs/codeSnippet.png";
+
 import ArrowLeft from "../imgs/left-arrow.png";
 import ArrowRight from "../imgs/right-arrow.png";
 
@@ -44,11 +46,22 @@ const myWorkArr = [
     id: 4,
     title: "LolMatch",
     description:
+      "I have created a website that provides a way to save and search for code snippets",
+    image: CodeSnippet,
+    description2:
+      "The skills i used during this project consisted of: React, Remix, MongoDB. \n\n One interesting thing i want to take from this project was how to condust nested links.",
+    link: "https://lol-match-five.vercel.app/comps",
+    tags: ["React", "Remix", "MongoDB"],
+  },
+  {
+    id: 5,
+    title: "Snippet Saver",
+    description:
       "I have created a website that provides a fun way to create League of legends team comps and share them with others",
     image: LolMix,
     description2:
       "The skills i used during this project consisted of: React, Remix, MongoDB. \n\n One interesting thing i want to take from this project was being able to learn how to drag and drop elements.",
-    link: "https://lol-match-five.vercel.app/comps",
+    link: "https://github.com/BloodBusk/CodeSnippet.git",
     tags: ["React", "Remix", "MongoDB"],
   },
 ];
