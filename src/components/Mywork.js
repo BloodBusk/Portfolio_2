@@ -46,10 +46,10 @@ const myWorkArr = [
     id: 4,
     title: "LolMatch",
     description:
-      "I have created a website that provides a way to save and search for code snippets",
-    image: CodeSnippet,
+      "I have created a website that provides a fun way to create League of legends team comps and share them with others",
+    image: LolMix,
     description2:
-      "The skills i used during this project consisted of: React, Remix, MongoDB. \n\n One interesting thing i want to take from this project was how to condust nested links.",
+      "The skills i used during this project consisted of: React, Remix, MongoDB. \n\n One interesting thing i want to take from this project was being able to learn how to drag and drop elements.",
     link: "https://lol-match-five.vercel.app/comps",
     tags: ["React", "Remix", "MongoDB"],
   },
@@ -57,10 +57,10 @@ const myWorkArr = [
     id: 5,
     title: "Snippet Saver",
     description:
-      "I have created a website that provides a fun way to create League of legends team comps and share them with others",
-    image: LolMix,
+      "I have created a website that provides a way to save and search for code snippets",
+    image: CodeSnippet,
     description2:
-      "The skills i used during this project consisted of: React, Remix, MongoDB. \n\n One interesting thing i want to take from this project was being able to learn how to drag and drop elements.",
+      "The skills i used during this project consisted of: React, Remix, MongoDB. \n\n One interesting thing i want to take from this project was how to condust nested links.",
     link: "https://github.com/BloodBusk/CodeSnippet.git",
     tags: ["React", "Remix", "MongoDB"],
   },
