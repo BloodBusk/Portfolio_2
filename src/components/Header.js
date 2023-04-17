@@ -17,40 +17,10 @@ export default function Header() {
   return (
     <header className=" py-8 shadow-md sticky top-0 bg-white z-50">
       <div className="flex justify-center items-center w-[1200px] m-auto max-lg:w-4/5 max-lg:justify-evenly">
-        <div className="w-1/3 text-center max-lg:flex max-lg:flex-col max-lg:text-left">
+        <div className="w-1/3 text-center max-lg:flex max-lg:flex-col">
           <div className="hidden w-full max-lg:block" onClick={handleShow}>
             <img src={Hamburger} alt="menuIcon" className="w-1/3" />
           </div>
-          {show ? (
-            <>
-              <HashLink
-                smooth
-                to="#hero"
-                className="p-4 hover:underline decoration-gray-900 decoration-4 Inter-Med"
-                onClick={() => setShow(false)}
-              >
-                Home
-              </HashLink>
-              <HashLink
-                smooth
-                to="#mywork"
-                className="p-4 hover:underline decoration-gray-900 decoration-4 Inter-Med"
-                onClick={() => setShow(false)}
-              >
-                Work
-              </HashLink>
-              <HashLink
-                smooth
-                to="#about"
-                className="p-4 hover:underline decoration-gray-900 decoration-4 Inter-Med"
-                onClick={() => setShow(false)}
-              >
-                About
-              </HashLink>
-            </>
-          ) : (
-            ""
-          )}
           <HashLink
             smooth
             to="#hero"
@@ -95,6 +65,36 @@ export default function Header() {
           </Link>
         </div>
       </div>
+      {show ? (
+        <div className="w-full flex flex-col items-center mt-4 border-t">
+          <HashLink
+            smooth
+            to="#hero"
+            className="p-4 hover:underline decoration-gray-900 decoration-4 Inter-Med"
+            onClick={() => setShow(false)}
+          >
+            Home
+          </HashLink>
+          <HashLink
+            smooth
+            to="#mywork"
+            className="p-4 hover:underline decoration-gray-900 decoration-4 Inter-Med"
+            onClick={() => setShow(false)}
+          >
+            Work
+          </HashLink>
+          <HashLink
+            smooth
+            to="#about"
+            className="p-4 hover:underline decoration-gray-900 decoration-4 Inter-Med"
+            onClick={() => setShow(false)}
+          >
+            About
+          </HashLink>
+        </div>
+      ) : (
+        ""
+      )}
     </header>
   );
 }
